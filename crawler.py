@@ -1,17 +1,17 @@
 #python2 execfile("D:\\MyRepository\\WebCrawler\\crawler.py")
-#exec(open("D:\\Web Scraping\\crawler.py").read())
+#python3 exec(open("D:\\MyRepository\\WebCrawler\\crawler.py").read())
 
 # Author: Luming Zhang
+# For iOS sofity
+# Now it is written in Python2
 # 01/28/2015
 
 import time
 import urlparse
-#import urllib.parse
 import urllib
 import urllib2
 import re
 import os
-
 import sys  
 
 # render the page
@@ -22,7 +22,6 @@ import sys
 #import urllib.request
 from bs4 import BeautifulSoup
 
-#
 def retrieveProductInfo(htmltext):
   # regex for thumb and HD needs to be refined
   regex = [('title','<title>(.+?)</title>'),
